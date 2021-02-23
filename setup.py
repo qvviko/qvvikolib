@@ -1,9 +1,12 @@
 
 from setuptools import setup, find_packages
+with open("README.md", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
 
 setup(name='qvvikolib',
-      version='0.0',
+      version='0.0.1',
       description='Utils by qvviko',
+      long_description=long_description,
       author='Vladislav Savchuk',
       author_email='qvviko@gmail.com',
       license='MIT',
