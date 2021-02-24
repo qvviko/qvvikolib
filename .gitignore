@@ -3,3 +3,5 @@
 build
 dist
 qvvikolib.egg-info
+
+__pycache__
