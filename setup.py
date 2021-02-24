@@ -4,7 +4,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(name='qvvikolib',
-      version='0.0.1',
+      version='0.0.2',
       description='Utils by qvviko',
       long_description=long_description,
       author='Vladislav Savchuk',
