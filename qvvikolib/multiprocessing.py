@@ -16,7 +16,9 @@ class LazyParallelResize(Dataset):
 
     def __getitem__(self, idx):
         item = self.dirs[idx]
-        if os.path.isfile(self.path + item) and not os.path.exists(self.new_path + item):
+        print('lol')
+        if os.path.isfile(os.path.join(self.path, item)) and not os.path.exists(os.path.join(self.new_path, item)):
+            print('hewo')
             im = Image.open(self.path + item)
             imResize = im.resize(self.size, Image.CUBIC)
             imResize.save(self.new_path + item)
